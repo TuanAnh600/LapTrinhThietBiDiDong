@@ -42,7 +42,7 @@
                                                                     console.log(`Data 2: John's BMI (${johnBMI2.toFixed(2)}) is higher than Mark's (${markBMI2.toFixed(2)})!`);
                                                                 }
                                                                 */
-
+        /*CHallenge 3
         // Test Data
         const data1Dolphins = [96, 108, 89];
         const data1Koalas = [88, 91, 110];
@@ -98,4 +98,17 @@
         determineWinner(bonus1Dolphins, bonus1Koalas);
 
         console.log("\nBonus Data 2:");
-        determineWinner(bonus2Dolphins, bonus2Koalas);
+        determineWinner(bonus2Dolphins, bonus2Koalas);*/
+
+        //Test data
+        const billValues = [275, 40, 430];
+
+        billValues.forEach(bill => {
+
+            const tip = (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.2;
+
+            const totalValue = bill + tip;
+            
+   
+            console.log(`The bill was ${bill}, the tip was ${tip.toFixed(2)}, and the total value ${totalValue.toFixed(2)}`);
+        });
